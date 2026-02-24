@@ -22,16 +22,16 @@ sudo apt install -y docker-compose-plugin
 docker compose version
 ```
 
-test
+- test
 ```
 docker run hello-world
 ```
 
-revisar logs
+- crear o modificar este archivo
 ```
 sudo touch /etc/docker/daemon.json
 sudo nano /etc/docker/daemon.json 
-```
+
 
 agregar los siguiente 
 {
@@ -44,14 +44,17 @@ agregar los siguiente
 
 guardar y ejecutar
 sudo systemctl restart docker
+```
 
-imagen desde archivo dockerfile
-docker build -t jenkins-lab .
+- crear imagen desde archivo dockerfile
+````
+docker build -t jenkins-lab .```
 
-revisar imagenes
-docker images
+- revisar imagenes
+````
+docker images```
 
-lazar docker
+- lanzar docker
 ```
 sudo docker run -d \
   --name jenkins-lab \
@@ -63,10 +66,18 @@ sudo docker run -d \
   jenkins-lab
 ```
 
-docker ps para validar imagen corriendo
+- validar imagen corriendo
+````
+docker ps ```
 
-ver clave inicial docker logs jenkins-lab
-es algo como a1bcd1....
+- acceder y configuracion inicial
+````
+ip:8080
+
+ejecutar en terminal 
+
+docker logs jenkins-lab
+retorna
 
 [LF]> Jenkins initial setup is required. An admin user has been created and a password generated.
 [LF]> Please use the following password to proceed to installation:
@@ -74,8 +85,6 @@ es algo como a1bcd1....
 [LF]> 045db419a45b475597b2958df39aff63
 [LF]> 
 [LF]> This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
+```
 
-acceder ip:8080
-usar la clave anteriormente encontrada e instalar los plugins seguridos.
-
-Crear tu usuario max/max
+Crear tu usuario admin ejemplo max/max
