@@ -47,12 +47,14 @@ sudo systemctl restart docker
 ```
 
 - crear imagen desde archivo dockerfile
-````
-docker build -t jenkins-lab .```
+```
+docker build -t jenkins-lab .
+```
 
 - revisar imagenes
-````
-docker images```
+```
+docker images
+```
 
 - lanzar docker
 ```
@@ -67,11 +69,12 @@ sudo docker run -d \
 ```
 
 - validar imagen corriendo
-````
-docker ps ```
+```
+docker ps 
+```
 
 - acceder y configuracion inicial
-````
+```
 ip:8080
 
 ejecutar en terminal 
@@ -87,4 +90,4 @@ retorna
 [LF]> This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 ```
 
-Crear tu usuario admin ejemplo max/max
+- Crear tu usuario admin ejemplo max/max
