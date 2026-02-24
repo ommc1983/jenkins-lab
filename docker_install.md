@@ -3,16 +3,20 @@
 - install docker
 `curl -sSL https://get.docker.com | sh`
 
-Agregar mi usuario
+- Agregar mi usuario
+```
 sudo usermod -aG docker $USER
 newgrp docker
+```
 
-Instalar docker compose
+- Instalar docker compose
+```
 sudo apt update
 sudo apt install -y docker-compose-plugin
+```
 
-validar docker compose
-docker compose version
+- validar docker compose
+```docker compose version```
 
 test
 docker run hello-world
