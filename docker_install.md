@@ -91,3 +91,5 @@ retorna
 ```
 
 - Crear tu usuario admin ejemplo max/max
+
+![jenkins_online](https://github.com/ommc1983/jenkins-lab/blob/main/jenkins.png)
