@@ -1,7 +1,9 @@
 # Instalacion Docker en Rasberry pi.
 ## Docker
 - install docker
-`curl -sSL https://get.docker.com | sh`
+```
+curl -sSL https://get.docker.com | sh
+```
 
 - Agregar mi usuario
 ```
@@ -16,14 +18,20 @@ sudo apt install -y docker-compose-plugin
 ```
 
 - validar docker compose
-```docker compose version```
+```
+docker compose version
+```
 
 test
+```
 docker run hello-world
+```
 
-evitar logs
+revisar logs
+```
 sudo touch /etc/docker/daemon.json
 sudo nano /etc/docker/daemon.json 
+```
 
 agregar los siguiente 
 {
