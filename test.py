@@ -29,5 +29,9 @@ def main():
     print(f"Raíz cuadrada de {a}: {raiz_cuadrada_a}")
     print(f"Promedio: ({a} + {b}) / 2 = {promedio}")
 
+    # Calcular la hipotenusa de un triángulo rectángulo con catetos a y b
+    hipotenusa = math.hypot(a, b)
+    print(f"Hipotenusa: √({a}² + {b}²) = {hipotenusa}")
+
 if __name__ == "__main__":
     main()
