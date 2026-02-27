@@ -102,4 +102,4 @@ sudo systemctl status ngrok.service
 ![jenkins_online](https://github.com/ommc1983/jenkins-lab/blob/main/jenkins_ngrok.png)
 
 ## Riesgo
-- posible perdida de la url en ngrok pero eso implica revisarla y configurar nuevamente github webhook
+- posible perdida de la url en ngrok pero eso implica revisarla y configurar nuevamente github webhook.
